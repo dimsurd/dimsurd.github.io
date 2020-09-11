@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+  }
+/* navbar */
+
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+
+
+/* utility */
+.tombol
+{
+    text-transform: uppercase;
+    border-radius: 40px;
+    background-color: #F05F40;
+    border: none;
+}
+
+hr{
+    border-color: #F05F40;
+    width: 70px;
+    border-width: 3px;
+}
+
+.judul{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.judulabout{
+    margin-top: -40px;
+    text-align: center;
+}
+
+.oren{
+    color:#F05F40 ;
+}
+
+
+
+
+
+/* jumbotron */
+.jumbotron{
+    background-image: url("../img/jumbo.jpg");
+    background-size: cover;
+    height: 540px;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 70%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0, 0, 0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 45px;
+}
+.jumbotron .span{
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.jumbotron .subdiplay{
+    color: white;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* info panel */
+.info-panel{
+   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+   border-radius: 12px;
+   margin-top: -120px;
+   background-color: white;
+   padding: 30px;
+}
+
+.info-panel img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h2{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.info-panel h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.info-panel p{
+    font-size: 15px;
+    color: #acacac;
+    font-weight: 200;
+}
+
+/* aboutme */
+.aboutme{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.aboutme h1{
+   text-transform: uppercase;
+   margin-top: 30px;
+}
+
+.aboutme h1 span{
+    font-weight: 500;
+}
+
+.aboutme p{
+    font-size: 18px;
+    opacity: 85%;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+
+
+/* skills */
+
+.iconify{
+    margin-top: 100px;
+    padding-bottom: 25px;
+}
+    
+.progress-bar {
+    background-color: #F05F40;
+    
+}
+
+.skills .rincian h4{
+  text-align: center;
+}
+
+.carousel{
+    margin-top: 70px;
+}
+
+/* footer */
+
+footer{
+
+
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #333;	
+	color: #aaa;
+}
+
+
+/* desktop version */
+@media (min-width: 992px) { 
+
+    .navbar-brand,.nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after
+    {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #F05F40;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 540px;
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+
+    .aboutme{
+        text-align: left;
+    }
+
+
+    
+}
